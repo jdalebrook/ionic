@@ -1,0 +1,13 @@
+{
+  "name": "BBVA Portal Noticias Hacking",
+  "short_name": "BBVA Portal Noticias Hacking",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/imgs/logo.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "rgb(9,79,164)",
+  "theme_color": "rgb(9,79,164)"
+}
