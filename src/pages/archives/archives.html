@@ -1,17 +1,285 @@
 <ion-header>
 
   <ion-navbar color="primary">
- 
+
     <ion-title>Archives</ion-title>
     <button ion-button menuToggle end>
-        <ion-icon name="menu"></ion-icon>
-      </button>
+      <ion-icon name="menu"></ion-icon>
+    </button>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
+  <ion-grid>
+
+    <!-- bloque noticia -->
+    <div class="noticia">
     
+      <ion-row class="separador">
+        <ion-col col-sm-12 col-md-1 text-left>
+          <ion-img src="./assets/imgs/iconimagenotfound.png" class="imgNew"></ion-img>
+        </ion-col>
+
+        <ion-col  col-sm-9 text-left>
+
+          <h5 class="title">  Titular  </h5>
+          <p  class="subtitle">  Resumen contenido </p>
+          <p><small  >22 Noviembre 2017 </small> </p>
+
+        </ion-col>
+
+        <ion-col  col-sm-2 text-center>
+
+          <ion-row class="redes">
+
+            <ion-col col-sm-6 col-md-6  col-lg-3 row>
+                <ion-col col-12  ><ion-icon name="heart"></ion-icon></ion-col>
+                <ion-col col-12  ><small col-12>101k</small></ion-col>                        
+            </ion-col>
+
+            <ion-col col-sm-6 col-md-6 col-lg-3 row>
+              <ion-col col-12 ><ion-icon name="ios-chatbubbles-outline"></ion-icon></ion-col>
+              <ion-col col-12 > <small col-12>875</small></ion-col>
+             
+            </ion-col>
+
+            <ion-col  col-sm-6 col-md-6 col-lg-3 row>              
+                <ion-col col-12 > <ion-icon name="logo-facebook"></ion-icon></ion-col> 
+                <ion-col col-12 ><small col-12>575</small></ion-col> 
+            </ion-col>
+
+            <ion-col  col-sm-6 col-md-6 col-lg-3 row>
+                <ion-col col-12 ><ion-icon name="logo-twitter"></ion-icon></ion-col>
+                <ion-col col-12  ><small>200k</small></ion-col>              
+            </ion-col>
+            
+          </ion-row>
+
+     
+
+        </ion-col>
+
+      </ion-row>
+
+   
+    </div>
+    <!-- bloque noticia -->
+
+    
+      <!-- bloque noticia -->
+      <div class="noticia">
+          
+            <ion-row class="separador">
+              <ion-col col-sm-12 col-md-1 text-left>
+                <ion-img src="./assets/imgs/iconimagenotfound.png" class="imgNew"></ion-img>
+              </ion-col>
+      
+              <ion-col  col-sm-9 text-left>
+      
+                <h5 class="title">  Titular  </h5>
+                <p  class="subtitle">  Resumen contenido </p>
+                <p><small  >22 Noviembre 2017 </small> </p>
+      
+              </ion-col>
+      
+              <ion-col  col-sm-2 text-center>
+      
+                <ion-row class="redes">
+      
+                  <ion-col col-sm-6 col-md-6  col-lg-3 row>
+                      <ion-col col-12  ><ion-icon name="heart"></ion-icon></ion-col>
+                      <ion-col col-12  ><small col-12>101k</small></ion-col>                        
+                  </ion-col>
+      
+                  <ion-col col-sm-6 col-md-6 col-lg-3 row>
+                    <ion-col col-12 ><ion-icon name="ios-chatbubbles-outline"></ion-icon></ion-col>
+                    <ion-col col-12 > <small col-12>875</small></ion-col>
+                   
+                  </ion-col>
+      
+                  <ion-col  col-sm-6 col-md-6 col-lg-3 row>              
+                      <ion-col col-12 > <ion-icon name="logo-facebook"></ion-icon></ion-col> 
+                      <ion-col col-12 ><small col-12>575</small></ion-col> 
+                  </ion-col>
+      
+                  <ion-col  col-sm-6 col-md-6 col-lg-3 row>
+                      <ion-col col-12 ><ion-icon name="logo-twitter"></ion-icon></ion-col>
+                      <ion-col col-12  ><small>200k</small></ion-col>              
+                  </ion-col>
+                  
+                </ion-row>
+      
+           
+      
+              </ion-col>
+      
+            </ion-row>
+      
+         
+          </div>
+          <!-- bloque noticia -->
+            <!-- bloque noticia -->
+    <div class="noticia">
+        
+          <ion-row class="separador">
+            <ion-col col-sm-12 col-md-1 text-left>
+              <ion-img src="./assets/imgs/iconimagenotfound.png" class="imgNew"></ion-img>
+            </ion-col>
+    
+            <ion-col  col-sm-9 text-left>
+    
+              <h5 class="title">  Titular  </h5>
+              <p  class="subtitle">  Resumen contenido </p>
+              <p><small  >22 Noviembre 2017 </small> </p>
+    
+            </ion-col>
+    
+            <ion-col  col-sm-2 text-center>
+    
+              <ion-row class="redes">
+    
+                <ion-col col-sm-6 col-md-6  col-lg-3 row>
+                    <ion-col col-12  ><ion-icon name="heart"></ion-icon></ion-col>
+                    <ion-col col-12  ><small col-12>101k</small></ion-col>                        
+                </ion-col>
+    
+                <ion-col col-sm-6 col-md-6 col-lg-3 row>
+                  <ion-col col-12 ><ion-icon name="ios-chatbubbles-outline"></ion-icon></ion-col>
+                  <ion-col col-12 > <small col-12>875</small></ion-col>
+                 
+                </ion-col>
+    
+                <ion-col  col-sm-6 col-md-6 col-lg-3 row>              
+                    <ion-col col-12 > <ion-icon name="logo-facebook"></ion-icon></ion-col> 
+                    <ion-col col-12 ><small col-12>575</small></ion-col> 
+                </ion-col>
+    
+                <ion-col  col-sm-6 col-md-6 col-lg-3 row>
+                    <ion-col col-12 ><ion-icon name="logo-twitter"></ion-icon></ion-col>
+                    <ion-col col-12  ><small>200k</small></ion-col>              
+                </ion-col>
+                
+              </ion-row>
+    
+         
+    
+            </ion-col>
+    
+          </ion-row>
+    
+       
+        </div>
+        <!-- bloque noticia -->
+          <!-- bloque noticia -->
+    <div class="noticia">
+        
+          <ion-row class="separador">
+            <ion-col col-sm-12 col-md-1 text-left>
+              <ion-img src="./assets/imgs/iconimagenotfound.png" class="imgNew"></ion-img>
+            </ion-col>
+    
+            <ion-col  col-sm-9 text-left>
+    
+              <h5 class="title">  Titular  </h5>
+              <p  class="subtitle">  Resumen contenido </p>
+              <p><small  >22 Noviembre 2017 </small> </p>
+    
+            </ion-col>
+    
+            <ion-col  col-sm-2 text-center>
+    
+              <ion-row class="redes">
+    
+                <ion-col col-sm-6 col-md-6  col-lg-3 row>
+                    <ion-col col-12  ><ion-icon name="heart"></ion-icon></ion-col>
+                    <ion-col col-12  ><small col-12>101k</small></ion-col>                        
+                </ion-col>
+    
+                <ion-col col-sm-6 col-md-6 col-lg-3 row>
+                  <ion-col col-12 ><ion-icon name="ios-chatbubbles-outline"></ion-icon></ion-col>
+                  <ion-col col-12 > <small col-12>875</small></ion-col>
+                 
+                </ion-col>
+    
+                <ion-col  col-sm-6 col-md-6 col-lg-3 row>              
+                    <ion-col col-12 > <ion-icon name="logo-facebook"></ion-icon></ion-col> 
+                    <ion-col col-12 ><small col-12>575</small></ion-col> 
+                </ion-col>
+    
+                <ion-col  col-sm-6 col-md-6 col-lg-3 row>
+                    <ion-col col-12 ><ion-icon name="logo-twitter"></ion-icon></ion-col>
+                    <ion-col col-12  ><small>200k</small></ion-col>              
+                </ion-col>
+                
+              </ion-row>
+    
+         
+    
+            </ion-col>
+    
+          </ion-row>
+    
+       
+        </div>
+        <!-- bloque noticia -->
+          <!-- bloque noticia -->
+    <div class="noticia">
+        
+          <ion-row class="separador">
+            <ion-col col-sm-12 col-md-1 text-left>
+              <ion-img src="./assets/imgs/iconimagenotfound.png" class="imgNew"></ion-img>
+            </ion-col>
+    
+            <ion-col  col-sm-9 text-left>
+    
+              <h5 class="title">  Titular  </h5>
+              <p  class="subtitle">  Resumen contenido </p>
+              <p><small  >22 Noviembre 2017 </small> </p>
+    
+            </ion-col>
+    
+            <ion-col  col-sm-2 text-center>
+    
+              <ion-row class="redes">
+    
+                <ion-col col-sm-6 col-md-6  col-lg-3 row>
+                    <ion-col col-12  ><ion-icon name="heart"></ion-icon></ion-col>
+                    <ion-col col-12  ><small col-12>101k</small></ion-col>                        
+                </ion-col>
+    
+                <ion-col col-sm-6 col-md-6 col-lg-3 row>
+                  <ion-col col-12 ><ion-icon name="ios-chatbubbles-outline"></ion-icon></ion-col>
+                  <ion-col col-12 > <small col-12>875</small></ion-col>
+                 
+                </ion-col>
+    
+                <ion-col  col-sm-6 col-md-6 col-lg-3 row>              
+                    <ion-col col-12 > <ion-icon name="logo-facebook"></ion-icon></ion-col> 
+                    <ion-col col-12 ><small col-12>575</small></ion-col> 
+                </ion-col>
+    
+                <ion-col  col-sm-6 col-md-6 col-lg-3 row>
+                    <ion-col col-12 ><ion-icon name="logo-twitter"></ion-icon></ion-col>
+                    <ion-col col-12  ><small>200k</small></ion-col>              
+                </ion-col>
+                
+              </ion-row>
+    
+         
+    
+            </ion-col>
+    
+          </ion-row>
+    
+       
+        </div>
+        <!-- bloque noticia -->
+
+  </ion-grid>
+
+
 </ion-content>

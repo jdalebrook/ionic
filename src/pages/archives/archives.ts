@@ -15,11 +15,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ArchivesPage {
 
+  
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ArchivesPage');
   }
-
+  getItems($event) {
+    console.log($event)
+  }
 }

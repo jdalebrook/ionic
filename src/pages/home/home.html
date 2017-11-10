@@ -1,23 +1,92 @@
 <ion-header>
   <ion-navbar color="primary">
-  
+
     <ion-title>Bienvenido Juan</ion-title>
     <button ion-button menuToggle end>
-        <ion-icon name="menu"></ion-icon>
-      </button>
+      <ion-icon name="menu"></ion-icon>
+    </button>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding >
-    <!-- <ion-list>
+<ion-content padding>
+  <!-- <ion-list>
       <ion-item *ngFor="let item of items">
         {{ item }}
       </ion-item>
     </ion-list>
 
      -->
-    
-     <ion-img [width]="imgWidth" [height]="imgHeight" src="./assets/imgs/Icono aislado.png" class="initialanimation"></ion-img>
 
-  <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
+  <ion-img [width]="imgWidth" [height]="imgHeight" src="./assets/imgs/Icono aislado.png"
+   class="initialanimation" [class.openlogin]="isParaActive" ></ion-img>
+
+
+   <!-- <div class="card" *ngFor="let card of cards">
+      <div class="flipcard"  [ngClass]="{'flipped': card.isflipped }" 
+      (click)="card.isflipped = !card.isflipped;">
+      </div>
+  </div> -->
+
+
+     <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
+  <ion-grid>
+    <ion-row>
+      <ion-col col-sm-12 col-md-6 offset-md-3 text-center>        
+        <button ion-button (click)="showOptions(); toggleClass()" color="calltoaction" full
+         [class.dissabled]="isParaActive" > Entrar </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  <div *ngIf="mostraropciones">
+
+    <ion-grid>
+      <ion-row text-center>
+        <ion-col col-sm-12 col-md-6 offset-md-3 text-center>
+          <ion-item>
+            <!-- <ion-label floating color="primary">Username</ion-label> -->
+            <ion-input [(ngModel)]="usercreds.name" type="text" color="Colorinputs" clearInput placeholder="User"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-sm-12 col-md-6 offset-md-3 text-center>
+          <ion-item>
+            <!-- <ion-label floating color="primary">Password</ion-label> -->
+            <ion-input [(ngModel)]="usercreds.password" type="password" color="Colorinputs" clearInput placeholder="Password"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-sm-12 col-md-6 offset-md-3>
+          <button ion-button (click)="login(usercreds)" color="calltoaction" full>
+            Login
+          </button>
+        </ion-col>
+
+
+        <ion-col col-12 text-center>
+          <span color="light" class="registro">
+            ¿Olvidaste la clave de acceso?  <br>
+            Acceso con DNI electrónico
+          </span>
+        </ion-col>
+        <ion-col col-6 offset-3>
+          <button ion-button (click)="signup()" color="primarya" full>
+
+            Signup
+
+          </button>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
 </ion-content>

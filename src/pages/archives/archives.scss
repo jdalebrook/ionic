@@ -1,3 +1,12 @@
 page-archives {
-
+    body{
+        background: color($colors, bgrey)
+    }
+//.noticia{ }
+.separador{ border-bottom: solid 1px color($colors, borderbg)} 
+.imgNew{width: 60%; height: 100%;background: transparent;}
+}
+.redes{color: color($colors, primarya);}
+.redes small {
+    white-space: nowrap;
 }

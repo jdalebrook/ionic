@@ -35,6 +35,7 @@ $app-direction: ltr;
 
 $colors: (
   primary:#00346B,
+  primarygradients:rgb(0, 115, 165),
   primarya:rgb(0, 158,229),
   primaryb:rgb(82, 188, 236),
   primaryc: rgb(137, 209, 243),
@@ -44,12 +45,15 @@ $colors: (
   SecYellow: rgb(253, 189, 44),
   SecOrange: rgb(246,137,30), 
   SecGrey:rgb(71,75,80),
+  Colorinputs: #c7e2ee,
   //Extra Secondary
   secondary:  rgb(134,200,45),
   danger:     rgb(200, 23, 94),
   light:      #f4f4f4,
   dark:       #222,
   transparent:  transparent,
+  bgrey: #e9e9e9,
+  borderbg:#d3d3d3,
 );
 
 
@@ -95,5 +99,100 @@ $colors: (
 // Fonts
 // --------------------------------------------------
 
-// @import "roboto";
-// @import "noto-sans";
+@import "roboto";
+@import "noto-sans";
+
+//Reset BBVA
+//---------------------------------------------------
+@import "./ionic.theme.default";
+
+// Material Design Default Theme
+// ----------------------------------
+
+$colors-md: copy-colors($colors) !default;
+
+
+$text-md-color:                       $text-color !default;
+$background-md-color:                 $background-color !default;
+$subdued-text-md-color:               $subdued-text-color !default;
+
+$font-family-md-base:                 "Roboto", "arial", sans-serif !default;
+$font-size-md-base:                   $font-size-base !default;
+
+$content-md-padding:                  $content-padding !default;
+$content-md-margin:                   $content-margin !default;
+
+
+// Material Design Toolbar
+// --------------------------------------------------
+
+$toolbar-md-height:                   56px !default;
+$toolbar-md-padding:                  4px !default;
+$toolbar-md-background:               $toolbar-background !default;
+$toolbar-md-border-color:             $toolbar-border-color !default;
+$toolbar-md-text-color:               #424242 !default;
+$toolbar-md-active-color:             $toolbar-active-color !default;
+$toolbar-md-inactive-color:           $toolbar-inactive-color !default;
+
+
+// Material Design Tabs
+// --------------------------------------------------
+
+$tabs-md-background:                  $tabs-background !default;
+$tabs-md-tab-color-inactive:          #3c3c3c !default;
+$tabs-md-tab-color-active:            $tabs-tab-color-active !default;
+
+
+// Material Design List
+// --------------------------------------------------
+
+$list-md-text-color:                  $list-text-color !default;
+$list-md-border-color:                #dedede !default;
+$list-md-background-color:            $list-background-color !default;
+$list-md-activated-background-color:  #f1f1f1 !default;
+
+
+// Material Design Item
+// --------------------------------------------------
+
+$item-md-padding-top:                 13px !default;
+// deprecated
+$item-md-padding-right:               16px !default;
+$item-md-padding-end:                 $item-md-padding-right !default;
+$item-md-padding-bottom:              13px !default;
+// deprecated
+$item-md-padding-left:                16px !default;
+$item-md-padding-start:               $item-md-padding-left !default;
+$item-md-padding-media-top:           9px !default;
+$item-md-padding-media-bottom:        9px !default;
+$item-md-padding-icon-top:            11px !default;
+$item-md-padding-icon-bottom:         10px !default;
+
+
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Arial"), local("Maven-Pro-Regular"), url("#{$font-path}/MavenPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Arial Medium"), local("Maven-Pro-Medium"), url("#{$font-path}/MavenPro-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Arial Bold"), local("Maven-Pro-Bold"), url("#{$font-path}/MavenPro-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Arial Ultra Bold"), local("Maven-Pro-Regular-Ultra-Bold"), url("#{$font-path}/MavenPro-Black.ttf") format("truetype");
+}

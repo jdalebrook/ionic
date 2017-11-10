@@ -5,3 +5,31 @@
 button.item.item-block.item-md {
     background: transparent;
 }
+@mixin gradiente($angulo, $coloresgradienteinicio, $coloresgradientefinal){
+  background: color($colors, primary);  
+  background: -webkit-linear-gradientcolor($angulo, $coloresgradienteinicio, $coloresgradientefinal);  
+  background: -o-linear-gradient($angulo, $coloresgradienteinicio, $coloresgradientefinal);  
+  background: -moz-linear-gradient($angulo, $coloresgradienteinicio, $coloresgradientefinal);  
+  background: linear-gradient($angulo, $coloresgradienteinicio, $coloresgradientefinal);  
+}
+
+@mixin animacion( $propiedad, $tiempo, $modo){
+  -webkit-transition: $propiedad  $tiempo $modo;
+  -moz-transition: $propiedad  $tiempo $modo;
+  -o-transition: $propiedad  $tiempo $modo;
+  transition: $propiedad  $tiempo $modo;
+}
+
+@mixin sombrabg{
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+  background-color: #fff;
+}
+@mixin border{
+  border: 1px solid #d3d3d3;
+}
+.dissabled{
+  color: color($colors, SecGrey);
+  background-color: color($colors, primarygradients);     
+}
+.title{color: color($colors, primarya);}
+.subtitle{color: color($colors, SecGrey);}
